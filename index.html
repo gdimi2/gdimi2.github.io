@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitação de Material</h1>
+        <form id="pedido-form">
+            <!-- Linha para Polo e Nome -->
+            <div class="row">
+                <div class="column">
+                    <label for="polo">Polo:</label>
+                    <input type="text" id="polo" name="polo" required>
+                </div>
+                <div class="column">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+            </div>
+
+            <!-- Material 1 e Quantidade 1 -->
+            <div class="row">
+                <div class="column">
+                    <label for="material_1">Material 1:</label>
+                    <input type="text" id="material_1" name="material_1" required>
+
+                    <label for="quantidade_1">Quantidade 1:</label>
+                    <input type="number" id="quantidade_1" name="quantidade_1" required>
+                </div>
+                <div class="column">
+                    <label for="material_2">Material 2:</label>
+                    <input type="text" id="material_2" name="material_2" required>
+
+                    <label for="quantidade_2">Quantidade 2:</label>
+                    <input type="number" id="quantidade_2" name="quantidade_2" required>
+                </div>
+            </div>
+
+            <!-- Material 3 e Quantidade 3 -->
+            <div class="row">
+                <div class="column">
+                    <label for="material_3">Material 3:</label>
+                    <input type="text" id="material_3" name="material_3">
+
+                    <label for="quantidade_3">Quantidade 3:</label>
+                    <input type="number" id="quantidade_3" name="quantidade_3">
+                </div>
+                <div class="column">
+                    <label for="material_4">Material 4:</label>
+                    <input type="text" id="material_4" name="material_4">
+
+                    <label for="quantidade_4">Quantidade 4:</label>
+                    <input type="number" id="quantidade_4" name="quantidade_4">
+                </div>
+            </div>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
