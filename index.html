@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitação de Material</h1>
+        <form id="pedido-form">
+            <!-- Linha para Polo e Nome -->
+            <div class="row">
+                <div class="column">
+                    <label for="polo">Polo:</label>
+                    <select id="polo" name="polo" required>
+                        <option value="">Selecione um polo</option>
+                        <option value="Anápolis">Anápolis</option>
+                        <option value="Aparecida de Goiânia">Aparecida de Goiânia</option>
+                        <option value="Goiânia">Goiânia</option>
+                        <option value="Mossoró">Mossoró</option>
+			<option value="Natal norte">Natal norte</option>
+			<option value="Natal sul">Natal sul</option>
+			<option value="Novo Gama">Novo Gama</option>
+			<option value="São Luís">São Luís</option>
+			<option value="Taguatinga">Taguatinga</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+            </div>
+
+            <!-- Material 1 e Quantidade 1 -->
+            <div class="row">
+                <div class="column">
+                    <label for="material_1">Material:</label>
+                    <select id="material_1" name="material_1" required>
+                        <option value="">Selecione um material</option>
+                        <option value="Camisa Polo Feminina">Camisa Polo Feminina</option>
+                        <option value="Camisa Polo Masculina">Camisa Polo Masculina</option>
+                        <option value="Camisa UV Feminina">Camisa UV Feminina</option>
+                        <option value="Camisa UV Masculina">Camisa UV Masculina</option>
+			<option value="Cordões de crachá">Cordões de crachá</option>
+			<option value="Agenda">Agenda</option>
+			<option value="Caneta">Caneta</option>
+			<option value="Mochila">Mochila</option>
+			<option value="Zaut">Zaut</option>
+                    </select>
+
+                    <label for="quantidade_1">Quantidade:</label>
+                    <input type="number" id="quantidade_1" name="quantidade_1" min="0" required>
+                </div>
+                <div class="column">
+                    <label for="material_2">Material:</label>
+                    <select id="material_2" name="material_2">
+                        <option value="">Selecione um material</option>
+                        <option value="Camisa Polo Feminina">Camisa Polo Feminina</option>
+                        <option value="Camisa Polo Masculina">Camisa Polo Masculina</option>
+                        <option value="Camisa UV Feminina">Camisa UV Feminina</option>
+                        <option value="Camisa UV Masculina">Camisa UV Masculina</option>
+			<option value="Cordões de crachá">Cordões de crachá</option>
+			<option value="Agenda">Agenda</option>
+			<option value="Caneta">Caneta</option>
+			<option value="Mochila">Mochila</option>
+			<option value="Zaut">Zaut</option>
+                    </select>
+
+                    <label for="quantidade_2">Quantidade:</label>
+                    <input type="number" id="quantidade_2" name="quantidade_2" min="0">
+                </div>
+            </div>
+
+            <!-- Material 3 e Quantidade 3 -->
+            <div class="row">
+                <div class="column">
+                    <label for="material_3">Material:</label>
+                    <select id="material_3" name="material_3">
+                        <option value="">Selecione um material</option>
+                        <option value="Camisa Polo Feminina">Camisa Polo Feminina</option>
+                        <option value="Camisa Polo Masculina">Camisa Polo Masculina</option>
+                        <option value="Camisa UV Feminina">Camisa UV Feminina</option>
+                        <option value="Camisa UV Masculina">Camisa UV Masculina</option>
+			<option value="Cordões de crachá">Cordões de crachá</option>
+			<option value="Agenda">Agenda</option>
+			<option value="Caneta">Caneta</option>
+			<option value="Mochila">Mochila</option>
+			<option value="Zaut">Zaut</option>
+                    </select>
+
+                    <label for="quantidade_3">Quantidade:</label>
+                    <input type="number" id="quantidade_3" name="quantidade_3" min="0">
+                </div>
+                <div class="column">
+                    <label for="material_4">Material:</label>
+                    <select id="material_4" name="material_4">
+                        <option value="">Selecione um material</option>
+                        <option value="Camisa Polo Feminina">Camisa Polo Feminina</option>
+                        <option value="Camisa Polo Masculina">Camisa Polo Masculina</option>
+                        <option value="Camisa UV Feminina">Camisa UV Feminina</option>
+                        <option value="Camisa UV Masculina">Camisa UV Masculina</option>
+			<option value="Cordões de crachá">Cordões de crachá</option>
+			<option value="Agenda">Agenda</option>
+			<option value="Caneta">Caneta</option>
+			<option value="Mochila">Mochila</option>
+			<option value="Zaut">Zaut</option>
+                    </select>
+
+                    <label for="quantidade_4">Quantidade:</label>
+                    <input type="number" id="quantidade_4" name="quantidade_4" min="0">
+                </div>
+            </div>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
