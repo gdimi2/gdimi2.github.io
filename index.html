@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de RV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de RV</h2>
+	<h2>Comissão</h2>
+        <label for="tpv">TPV M1 Médio (R$):</label>
+        <input type="number" id="tpv" min="0">
+
+        <label for="clientes">Quantidade de clientes no M1:</label>
+        <input type="number" id="clientes" min="0">
+
+        <label for="vendas">Quantidade de vendas:</label>
+        <input type="number" id="vendas" min="0">
+	<h2>Premiação</h2>
+        <label for="t3_smart">Quantidade de T3_Smart:</label>
+        <input type="number" id="t3_smart" min="0">
+
+        <label for="cnpj">Quantidade de CNPJ:</label>
+        <input type="number" id="cnpj" min="0">
+
+        <label for="visitas">Visitas por DU:</label>
+        <input type="number" id="visitas" min="0">
+
+        <label for="migracao">% Migração:</label>
+        <input type="number" id="migracao" min="0" max="100" step="0.01">
+	<h2>Trimestral</h2>
+	<label for="tpv-total">TPV Total no trimestre:</label>
+        <input type="number" id="tpv-total" name="tpv-total" min="0" step="0.01">
+
+        <label for="tpv-medio">TPV Médio no trimestre:</label>
+        <input type="number" id="tpv-medio" name="tpv-medio" min="0" step="0.01">
+
+        <label for="qualidade-cadastro">% Qualidade de Cadastro no trimestre:</label>
+        <input type="number" id="qualidade-cadastro" name="qualidade-cadastro" min="0" max="100" step="0.01">
+
+        <label for="migracao-trimestre">% Migração no trimestre:</label>
+        <input type="number" id="migracao-trimestre" name="migracao-trimestre" min="0" max="100" step="0.01">
+
+        <label for="ativacao">% Ativação no trimestre:</label>
+        <input type="number" id="ativacao" name="ativacao" min="0" max="100" step="0.01">
+
+        <button onclick="calcularRV()">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+     		
+    <script src="script.js"></script>
+</body>
+</html>
